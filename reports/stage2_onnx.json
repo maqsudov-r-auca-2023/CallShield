@@ -1,0 +1,101 @@
+{
+  "created": "2026-10-29 10:14:56",
+  "sizes_mb": {
+    "pytorch_fp32": 267.8,
+    "onnx_fp32": 267.9,
+    "onnx_int8": 67.3
+  },
+  "accuracy": {
+    "onnx_fp32|test=scamdialogue": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "onnx_int8|test=scamdialogue": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "onnx_fp32|test=singleagent": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "onnx_int8|test=singleagent": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "onnx_fp32|test=youtube": {
+      "n": 20,
+      "positive_rate": 1.0,
+      "precision": 1.0,
+      "recall": 0.55,
+      "f1": 0.7097,
+      "macro_f1": 0.3548,
+      "accuracy": 0.55,
+      "threshold": 0.5
+    },
+    "onnx_int8|test=youtube": {
+      "n": 20,
+      "positive_rate": 1.0,
+      "precision": 1.0,
+      "recall": 0.55,
+      "f1": 0.7097,
+      "macro_f1": 0.3548,
+      "accuracy": 0.55,
+      "threshold": 0.5
+    }
+  },
+  "latency_single_chunk": {
+    "pytorch_fp32": {
+      "p50_ms": 11.98,
+      "p95_ms": 13.1
+    },
+    "onnx_fp32": {
+      "p50_ms": 12.61,
+      "p95_ms": 15.44
+    },
+    "onnx_int8": {
+      "p50_ms": 10.19,
+      "p95_ms": 11.2
+    }
+  },
+  "chunk_words": 120,
+  "threads": 4,
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpus": 12,
+    "torch": "2.15.0",
+    "device": "mps"
+  }
+}

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+mlruns/
+models/*
+!models/serving/
+models/serving/*.onnx
+*.log
+.DS_Store
+_vm_test_outputs/
+logs/
+logs_*.txt
+*.command
+mlflow.db
+mlartifacts/
+.pytest_cache/

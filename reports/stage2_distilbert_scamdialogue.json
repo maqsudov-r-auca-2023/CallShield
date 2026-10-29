@@ -1,0 +1,99 @@
+{
+  "created": "2026-10-29 10:11:38",
+  "args": {
+    "train_on": "scamdialogue",
+    "model": "distilbert-base-uncased",
+    "epochs": 3,
+    "bs": 16,
+    "lr": 3e-05,
+    "max_len": 256,
+    "max_train": 0,
+    "threads": 0
+  },
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpus": 12,
+    "torch": "2.15.0",
+    "device": "mps"
+  },
+  "train_rows": 1278,
+  "train_minutes": 1.4,
+  "history": [
+    {
+      "epoch": 0,
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    {
+      "epoch": 1,
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    {
+      "epoch": 2,
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    }
+  ],
+  "results": {
+    "test=scamdialogue": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "test=singleagent": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0
+    },
+    "test=youtube": {
+      "n": 20,
+      "positive_rate": 1.0,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714,
+      "macro_f1": 0.2857,
+      "accuracy": 0.4,
+      "threshold": 0.5
+    }
+  }
+}

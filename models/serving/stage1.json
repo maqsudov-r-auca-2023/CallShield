@@ -1,0 +1,1 @@
+{"features": ["out_calls_1h", "out_calls_24h", "distinct_callees_24h", "distinct_ratio_24h", "mean_duration_24h", "std_duration_24h", "short_call_share_24h", "mean_gap_s_24h", "min_gap_s_24h", "in_calls_24h", "sms_24h", "data_sessions_24h", "distinct_cells_24h", "hour_of_day", "secs_since_last_event"], "threshold": 0.7831}

@@ -1,0 +1,13 @@
+{
+  "created": "2026-10-29 10:19:29",
+  "stage1": {
+    "max_abs_diff": 0.0363784204506829,
+    "p999_abs_diff": 1.5281174306491785e-07,
+    "mean_abs_diff": 2.499735482282609e-06,
+    "decision_agreement": 1.0,
+    "onnx_kb": 553.1
+  },
+  "stage2": {
+    "source": "distilbert_mix"
+  }
+}

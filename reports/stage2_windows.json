@@ -1,0 +1,93 @@
+{
+  "created": "2026-10-29 10:19:28",
+  "window_words": 120,
+  "stride_words": 60,
+  "threshold": 0.5,
+  "model": "distilbert_mix",
+  "test=scamdialogue": {
+    "first_window_only": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 0.9877,
+      "recall": 1.0,
+      "f1": 0.9938,
+      "macro_f1": 0.9937,
+      "accuracy": 0.9938,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "false_positive_rate": 0.0125
+    },
+    "sliding_window_max": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 0.9195,
+      "recall": 1.0,
+      "f1": 0.9581,
+      "macro_f1": 0.9562,
+      "accuracy": 0.9563,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "false_positive_rate": 0.0875
+    },
+    "median_words_until_warning_on_scams": 120.0,
+    "median_transcript_words": 249.5
+  },
+  "test=singleagent": {
+    "first_window_only": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "macro_f1": 1.0,
+      "accuracy": 1.0,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "sliding_window_max": {
+      "n": 160,
+      "positive_rate": 0.5,
+      "precision": 0.9877,
+      "recall": 1.0,
+      "f1": 0.9938,
+      "macro_f1": 0.9937,
+      "accuracy": 0.9938,
+      "threshold": 0.5,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "false_positive_rate": 0.0125
+    },
+    "median_words_until_warning_on_scams": 120.0,
+    "median_transcript_words": 236.5
+  },
+  "test=youtube": {
+    "first_window_only": {
+      "n": 20,
+      "positive_rate": 1.0,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "macro_f1": 0.3333,
+      "accuracy": 0.5,
+      "threshold": 0.5,
+      "false_positive_rate": null
+    },
+    "sliding_window_max": {
+      "n": 20,
+      "positive_rate": 1.0,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "macro_f1": 0.4286,
+      "accuracy": 0.75,
+      "threshold": 0.5,
+      "false_positive_rate": null
+    },
+    "median_words_until_warning_on_scams": 120.0,
+    "median_transcript_words": 395.0
+  }
+}

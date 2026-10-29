@@ -1,0 +1,40 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/1280 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1280/1280 [00:00<00:00, 42419.26 examples/s]
+Generating test split:   0%|          | 0/320 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 320/320 [00:00<00:00, 110050.61 examples/s]
+================================================================================ 
+ BothBosu/scam-dialogue DatasetDict({
+    train: Dataset({
+        features: ['dialogue', 'type', 'label'],
+        num_rows: 1280
+    })
+    test: Dataset({
+        features: ['dialogue', 'type', 'label'],
+        num_rows: 320
+    })
+})
+dialogue      str
+type          str
+label       int64
+dtype: object
+type {'ssn': 160, 'refund': 160, 'support': 160, 'reward': 160, 'delivery': 160, 'insurance': 160, 'telemarketing': 160, 'wrong': 160}
+label {1: 640, 0: 640}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+  File "/Users/roma/Documents/CallShield/.venv/lib/python3.14/site-packages/datasets/load.py", line 1667, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/Users/roma/Documents/CallShield/.venv/lib/python3.14/site-packages/datasets/load.py", line 1290, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/Users/roma/Documents/CallShield/.venv/lib/python3.14/site-packages/datasets/load.py", line 1176, in dataset_module_factory
+    raise e1 from None
+  File "/Users/roma/Documents/CallShield/.venv/lib/python3.14/site-packages/datasets/load.py", line 1164, in dataset_module_factory
+    raise DatasetNotFoundError(message) from e
+datasets.exceptions.DatasetNotFoundError: Dataset 'DevangDalvi/fraud-call-dataset' is a gated dataset on the Hub. You must be authenticated to access it.

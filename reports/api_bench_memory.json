@@ -1,0 +1,26 @@
+{
+  "created": "2026-10-29 10:20:14",
+  "stage1_latency": {
+    "p50_ms": 0.51,
+    "p95_ms": 0.55,
+    "p99_ms": 0.6
+  },
+  "stage1_rps": 360.3,
+  "stage2_latency": {
+    "p50_ms": 25.1,
+    "p95_ms": 27.77,
+    "p99_ms": 31.88
+  },
+  "stage2_rps": 282.8,
+  "stage2_chunk_words": 120,
+  "workers": 4,
+  "concurrency": 64,
+  "history_backend": "memory",
+  "hardware": {
+    "machine": "arm64",
+    "system": "Darwin",
+    "cpus": 12,
+    "torch": "2.15.0",
+    "device": "mps"
+  }
+}
